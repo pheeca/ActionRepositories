@@ -1,0 +1,23 @@
+{
+    "Lang": ["en", "ur", "none"],
+    "Name": "",
+    "Alias": [""],
+    "EntityType": "absolute/relative/Relative to",
+    "DataType": "time/space/binary/numeric/text/file blob/Matrix/Structured",
+    "DataTypeMetaData": {
+      "subtime": "",
+      "unit": "",
+      "referencedDatatype": "",
+      "Structured": {}
+    },
+    "RangeCategory": "point/range",
+    "ReferentialStatus": "direct/reference",
+    "Completness": "incomplete/complete/partial(to compute with absolute)",
+    "MutabilityStatus": "incomplete/locked/hard(relative degree with permission or some pieces locked)",
+    "PrecisionResolution": "",
+    "Content": {
+      "Value": "",
+      "Default": "",
+      "referenceValue": ""
+    }
+  }

@@ -1,0 +1,45 @@
+New Internet protocol:for JSON based actions/custom coded actions,incomplete/locked/hard(relative degree)/partial/variable precision knowledge,with incomplete/locked/partial/variable precision rendering engine,Entity Metadata[modification times,creator,rights,roles]
+incomplete/locked/hard(relative degree)/partial/variable precision nd entity data with (mutable/immutable hardness rules)
+headers multi lanng??,[multi-hardness rules mapping,multi-roles mapping]
+incomplete/locked/hard(relative degree)/partial/variable precision Modification Map()
+
+
+type
+-Range
+-type
+-Time
+-Absolute,Relative,Relative to
+-Space
+
+
+
+
+
+Lang[en,ur,none]
+Name:"",
+Alias:[""]
+EntityType:absolute/relative/Relative to
+DataType:time/space/binary/numeric/text/file blob/Matrix/Structured
+DataTypeMetaData:{
+ "subtime","unit","referencedDatatype",Structured:{}
+}
+RageCategory:point/range
+ReferentialStatus:direct/reference
+Completness:incomplete/complete/partial(to compute with absolute)
+MutabilityStatus:incomplete/locked/hard(relative degree with permission or some pieces locked)
+PrecisionResoltuion:"",
+Content:{
+Value:"",
+Default:""
+,"referenceValue"
+}
+
+
+
+
+
+
+
+session
+project
+user

@@ -1,0 +1,10 @@
+{
+    "ActionID":"{ActionID}",
+    "ActionCloudId":"{ActionID}.{ActionCloudId}",
+    "Categories":[],
+    "Tags":[],
+    "Credentials":["Required??"],
+    "__RequiredDevice":"{} possible",
+    "RequiredDevice":"cloud",
+    "ReturnType":""
+}
