@@ -58,25 +58,16 @@ const ActionListManager = () => {
       ],
     },
   ]);
-  const [editingAction, setEditingAction] = useState(null);
 
   const handleAddAction = () => {
     // Logic to add a new action
   };
 
-  const handleEditAction = (id) => {
-    const actionToEdit = actions.find((action) => action.id === id);
-    setEditingAction(actionToEdit);
+  const handleEditAction = (id: number) => {
+    // Logic to edit an action
   };
 
-  const handleSaveAction = (updatedAction) => {
-    setActions(
-      actions.map((action) => (action.id === updatedAction.id ? updatedAction : action))
-    );
-    setEditingAction(null);
-  };
-
-  const handleDeleteAction = (id) => {
+  const handleDeleteAction = (id: number) => {
     setActions(actions.filter((action) => action.id !== id));
   };
 
@@ -154,56 +145,6 @@ const ActionListManager = () => {
           </table>
         </div>
       </div>
-
-      {editingAction && (
-        <div className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">Edit Action</h2>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              handleSaveAction(editingAction);
-            }}
-          >
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-700">Name</label>
-              <input
-                type="text"
-                value={editingAction.name}
-                onChange={(e) =>
-                  setEditingAction({ ...editingAction, name: e.target.value })
-                }
-                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-sm font-medium text-gray-700">Description</label>
-              <textarea
-                value={editingAction.description}
-                onChange={(e) =>
-                  setEditingAction({ ...editingAction, description: e.target.value })
-                }
-                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-              />
-            </div>
-            {/* Add more fields for other properties as needed */}
-            <div className="flex justify-end">
-              <button
-                type="button"
-                onClick={() => setEditingAction(null)}
-                className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-md mr-2"
-              >
-                Cancel
-              </button>
-              <button
-                type="submit"
-                className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md"
-              >
-                Save
-              </button>
-            </div>
-          </form>
-        </div>
-      )}
     </div>
   );
 };

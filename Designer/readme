@@ -43,3 +43,10 @@ Default:""
 session
 project
 user
+
+
+
+https://docs.oracle.com/en-us/iaas/Content/Functions/Tasks/languagessupportedbyfunctions.htm
+https://learn.microsoft.com/en-us/azure/azure-functions/supported-languages?tabs=isolated-process%2Cv4&pivots=programming-language-csharp
+https://cloud.google.com/run/docs/write-functions
+https://vercel.com/blog/edge-functions-generally-available
